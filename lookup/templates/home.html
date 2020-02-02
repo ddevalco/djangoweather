@@ -10,17 +10,17 @@
         There was an error, please try again...
     {% else %}
 <div class="jumbotron {{category_color}}">
-  <h1 class="display-4">{{ api.0.Category.Name }}<br/></h1>
-  <p class="lead">Current Air Quality: {{ api.0.AQI }}</p>
+  <h1 class="display-4">{{ api.1.Category.Name }}<br/></h1>
+  <p class="lead">Current Air Quality: {{ api.1.AQI }}</p>
  
   <p>
     {{ category_description }}
 </div>
 
 
-        Air Quality: {{ api.0.AQI }}<br/>
+        Air Quality: {{ api.1.AQI }}<br/>
         Area:  {{ api.0.ReportingArea }}, {{ api.0.StateCode }}<br/>
-        Category:  {{ api.0.Category.Name }}
+        Category:  {{ api.1.Category.Name }}
     {% endif %}
 {% endif %}
 {% endblock content %}
